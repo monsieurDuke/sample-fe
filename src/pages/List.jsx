@@ -23,7 +23,7 @@ const List = () => {
         ):(
           <ul>
             {
-              data.map((e, i) => (
+              data && data.data && data.data.map((e, i) => (
                 <li key={i}>
                   {e.title} <Link to={`/detail/${e.id}`}>Detail</Link>
                 </li>
